@@ -30,14 +30,15 @@ function exibirListaAmigos() {
 }
 
 function sortearAmigo() {
+    console.log("Botão clicado"); 
+
     if (amigos.length === 0) {
         alert("Não há amigos para sortear.");
         return;
     }
 
     let indiceAleatorio = Math.floor(Math.random() * amigos.length);
-
     let amigoSorteado = amigos[indiceAleatorio];
 
-    document.getElementById('resultadoSorteio').innerHTML = "O amigo sorteado é: " + amigoSorteado;
+    document.getElementById('resultado').innerHTML = "O amigo sorteado é: " + amigoSorteado;
 }
