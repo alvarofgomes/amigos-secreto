@@ -42,3 +42,9 @@ function sortearAmigo() {
 
     document.getElementById('resultado').innerHTML = "O amigo sorteado é: " + amigoSorteado;
 }
+
+document.getElementById('nomeAmigo').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') { 
+        adicionarAmigo();
+    }
+});
